@@ -98,11 +98,11 @@ for file in os.listdir(path1):
         #print(wins)
         for i in team4:
             teams[i].append(wins[i])
-            print(teams)
+            #print(teams)
     p = os.path.join('FootballDatasets/CollegeFootball/TeamDataBySeason', file)
     with open(p, 'w', newline ='') as csvfile:
         filewriter = csv.writer(csvfile, delimiter=',',quotechar='|', quoting=csv.QUOTE_MINIMAL)
-        filewriter.writerow(['TeamName', 'ScoreOff', 'RushAttOff', 'RushYdsOff', 'PassAttOff', 'PassCompOff', 'PassYdsOff', 'PassIntOff', 'FumblesOff', 'ScoreDef', 'RushAttDef', 'RushYdsDef', 'PassAttDef', 'PassCompDef', 'PassYdsDef', 'PassIntDef', 'FumblesDef''Wins'])
+        filewriter.writerow(['TeamName', 'ScoreOff', 'RushAttOff', 'RushYdsOff', 'PassAttOff', 'PassCompOff', 'PassYdsOff', 'PassIntOff', 'FumblesOff', 'ScoreDef', 'RushAttDef', 'RushYdsDef', 'PassAttDef', 'PassCompDef', 'PassYdsDef', 'PassIntDef', 'FumblesDef','Wins'])
         for i in teams:
             data = teams[i]
             data.insert(0, i)
